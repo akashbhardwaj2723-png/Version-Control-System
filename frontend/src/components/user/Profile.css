@@ -1,0 +1,233 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-page {
+  min-height: 100vh;
+  width: 80%;
+  background: #242424;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 25px;
+}
+
+/* Navbar */
+
+.profile-navbar {
+  max-width: 850px;
+  margin: auto;
+  /* padding: 10px 0 22px; */
+  border-bottom: 2px solid #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.github-logo svg {
+  background: white;
+  border-radius: 50%;
+}
+
+.github-logo h2 {
+  font-size: 20px;
+}
+
+.profile-nav-links {
+  display: flex;
+  gap: 45px;
+}
+
+.profile-nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-nav-links a:hover {
+  color: #58a6ff;
+}
+
+/* Tabs */
+
+.profile-tabs {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #c5c5c5;
+}
+
+.profile-tabs button {
+  background: transparent;
+  border: none;
+  color: #c9d1d9;
+  padding: 17px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.profile-tabs button.active {
+  color: white;
+  border-bottom-color: #f78166;
+}
+
+.profile-tabs button:hover {
+  color: white;
+}
+
+/* Profile Content */
+
+.profile-content {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.github-logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.profile-avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 25px;
+  flex-shrink: 0;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.profile-content > h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.follow-btn {
+  width: 220px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  background: #21262d;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.follow-btn:hover {
+  background: #30363d;
+}
+
+.followers-info {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 35px;
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.profile-tab-content {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #444;
+  text-align: center;
+  color: #c9d1d9;
+}
+
+.profile-tab-content h3 {
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 15px;
+  }
+
+  .profile-navbar {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .profile-nav-links {
+    gap: 20px;
+  }
+
+  .profile-tabs {
+    justify-content: center;
+  }
+
+  .profile-tabs button {
+    padding: 15px 8px;
+    font-size: 12px;
+  }
+}
+
+.PrfImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.heap-map {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  overflow-x: auto;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+/* Log out */
+
+.LogOut{
+  background-color: rgb(202, 49, 49);
+  color: aliceblue;
+  height: 30px;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 450px;
+  cursor: pointer;
+  font-weight: 600;
+}

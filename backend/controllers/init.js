@@ -1,0 +1,24 @@
+const fs = require("fs").promises;
+const path = require("path");
+
+ async function initRepo() {
+
+  const repoPath =  path.resolve(process.cwd(), ".AkGit");// floder create
+  const commitPath = path.join(repoPath , "commits")// file create
+
+  try {
+  await fs.mkdir(repoPath , {recursive:true});
+  await  fs.mkdir(commitPath , {recursive:true});
+  await fs.writeFile(
+    path.join(repoPath ,"config.json"),// join file inner side folder
+    JSON.stringify({bucket:process.env.S3_BUCKET})
+  )
+  console.log("Repository initialised");
+  
+    
+  } catch (err) {
+    console.log("Error Initialising repository" , err);
+    
+  }
+}
+module.exports = { initRepo };

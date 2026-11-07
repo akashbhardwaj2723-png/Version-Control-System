@@ -1,0 +1,28 @@
+.navBar{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  background-color: rgb(2, 22, 80);
+  padding-right: 10px;
+}
+img{
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+ margin-right: 10px;
+  margin-left: 10px;
+}
+nav div{
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+h3{
+  text-decoration: none;
+}
+p{
+  font-weight: 600;
+}
