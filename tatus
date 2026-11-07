@@ -1,0 +1,6 @@
+[33m8d7174a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update frontend and backend
+ backend/models/issueModel.js                    | 4 [32m++[m[31m--[m
+ backend/models/repoModel.js                     | 4 [32m++[m[31m--[m
+ backend/models/userModel.js                     | 5 [32m+++[m[31m--[m
+ frontend/src/components/dashBoard/DashBoard.jsx | 2 [32m+[m[31m-[m
+ 4 files changed, 8 insertions(+), 7 deletions(-)
