@@ -4,7 +4,7 @@ const  {Schema} = mongoose;
 
 const RepositorySchema = new Schema(
   {
-     timestamps: true,
+     
     userName:{
       type:String,
       required:true,
@@ -31,7 +31,7 @@ visibility: {
       type:Schema.Types.ObjectId,
       ref:"Issue"
     }
-  }
+  },{timestamps: true},
 );
 RepositorySchema.index(
   { userName: 1, owner: 1 },

@@ -1,5 +1,5 @@
 import React,{useEffect , useState} from 'react'
-import "./dashboard.css"
+import "./dashBoard.css"
 import NavBar from '../navBar';
 export default function DashBoard() {
 

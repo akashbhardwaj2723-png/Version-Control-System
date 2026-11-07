@@ -3,7 +3,7 @@ const {Schema} = mongoose;
 
 const IssueSchema = new Schema(
   {
-       timestamps: true,
+       
     title:{
       type:String,
       required:true
@@ -23,7 +23,7 @@ const IssueSchema = new Schema(
       required:true,
     },
 
-  }
+  },{timestamps: true},
 );
 
 const Issue = mongoose.model("Issue" ,IssueSchema);
